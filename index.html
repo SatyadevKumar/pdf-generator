@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate PDF</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Generate PDF</h1>
+  <form id="pdf-form">
+    <table>
+      <tr>
+        <td>Template Name:</td>
+        <td>
+          <select id="templateInput">
+            <option value="PDFTemplate"> PDF Template 1</option>
+            <option value="PDFTemplate2"> PDF Template 2</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Template Data:</td>
+        <td>
+          <textarea id="dataInput" style="width:500px;height:500px">
+            {
+              "templateName": "PDFTemplate2",
+              "securityMetrics": [
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                },
+                {
+                  "name": "Alp Sustainable US Equity Fund",
+                  "country": "USA",
+                  "currency": "USD",
+                  "ticker": "ALP",
+                  "cusip": "316433887",
+                  "isin": "US3164338879",
+                  "firmName": "alpha",
+                  "inceptionDate": "2022-04-14",
+                  "passiveFund": false,
+                  "mstarCategory": "Large Blend",
+                  "oldestInceptionDate": "2022-04-14",
+                  "mstarSecurityType": "Open-End Fund",
+                  "mstarGlobalCategory": "U.S. Equity",
+                  "mstarGlobalBroadCategory": null,
+                  "mstarUSCategory": null,
+                  "managerNames": [
+                    {
+                      "name": "xyz"
+                    },
+                    {
+                      "name": "xyx"
+                    }
+                  ],
+                  "hasReturns": false,
+                  "primaryProspectusBenchmark": null,
+                  "primaryProspectusBenchmarkId": "F00000USHB",
+                  "createdDate": "2023-03-02 09:56:06",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 09:56:06",
+                  "updatedBy": "abc",
+                  "morningstarId": "F00001DEQY",
+                  "exchange": "XNAS",
+                  "status": "active"
+                }
+              ],
+              "assetAllocation": [
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                },
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                },
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                },
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                }
+              ],
+              "assetAllocation2": [
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                },
+                {
+                  "morningstarId": "F00001DEQY",
+                  "ticker": "FIDEX",
+                  "exchange": "XNAS",
+                  "source": "morningstar",
+                  "holdingsDate": "2023-01-08",
+                  "equityAmount": 99.42192,
+                  "fixedIncome": null,
+                  "usEquity": 90.93945,
+                  "usFixedIncome": null,
+                  "cash": 0.577,
+                  "convertible": 0.0,
+                  "preferred": 0.0,
+                  "nonUsEquity": 8.48247,
+                  "nonUsFixedIncome": null,
+                  "other": 0.0,
+                  "createdDate": "2023-03-02 11:10:04",
+                  "createdBy": "abc",
+                  "updatedDate": "2023-03-02 11:10:04",
+                  "updatedBy": "abc"
+                }
+              ]
+            }
+          </textarea>
+        </td>
+      </tr>
+    </table>
+    <button type="submit">Generate PDF</button>
+  </form>
+  <script>
+    document.getElementById('pdf-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = JSON.parse(document.getElementById('dataInput').value);
+      data.templateName = document.getElementById('templateInput').value;
+      console.log(data);
+      const response = await fetch('/generate-pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'generated-pdf.pdf';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      }
+    });
+  </script>
+</body>
+</html>
